@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "1ea85907-66cd-48bd-9055-1cc8ba780539",
+		"name": "Vaja 4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30765762"
+	},
+	"item": [
+		{
+			"name": "poskusni",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get_vaje_Slika",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://vaje.ltfe.org/splet/slika1.jpg",
+					"protocol": "http",
+					"host": [
+						"vaje",
+						"ltfe",
+						"org"
+					],
+					"path": [
+						"splet",
+						"slika1.jpg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_zahtevek",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postman-echo.com/get?ime=pustisek",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"get"
+					],
+					"query": [
+						{
+							"key": "ime",
+							"value": "pustisek"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://postman-echo.com/post?priimek=pustisekma",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"post"
+					],
+					"query": [
+						{
+							"key": "priimek",
+							"value": "pustisekma"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

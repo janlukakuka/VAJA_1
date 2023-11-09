@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "15b5f392-09e8-4ec0-b74d-820b4d98ee6a",
+		"name": "vaja 5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30765762"
+	},
+	"item": [
+		{
+			"name": "1_pridobivanjePodatkov",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.rtvslo.si/weather",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rtvslo",
+						"si"
+					],
+					"path": [
+						"weather"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.rtvslo.si/console/poll",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rtvslo",
+						"si"
+					],
+					"path": [
+						"console",
+						"poll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "news_request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.rtvslo.si/news/setRating/687421?&client_id=8c5205a95060a482f0fc96b9162d9e3f&language=sl&rating=5",
+					"protocol": "https",
+					"host": [
+						"api",
+						"rtvslo",
+						"si"
+					],
+					"path": [
+						"news",
+						"setRating",
+						"687421"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "client_id",
+							"value": "8c5205a95060a482f0fc96b9162d9e3f"
+						},
+						{
+							"key": "language",
+							"value": "sl"
+						},
+						{
+							"key": "rating",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "jsonRPC",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_blockNumber\",\r\n    \"params\": [],\r\n    \"id\": 0\r\n}\r\n"
+				},
+				"url": {
+					"raw": "https://mainnet.infura.io/v3/21e65883b51645798d6481cb6dbf6948",
+					"protocol": "https",
+					"host": [
+						"mainnet",
+						"infura",
+						"io"
+					],
+					"path": [
+						"v3",
+						"21e65883b51645798d6481cb6dbf6948"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "10.vaja",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"jsonrpc\": \"2.0\",\r\n    \"method\": \"eth_getBlockByNumber\",\r\n    \"params\": [\r\n        \"0x11aceeb\",\r\n        true\r\n    ],\r\n    \"id\": 0\r\n}"
+				},
+				"url": {
+					"raw": "https://mainnet.infura.io/v3/21e65883b51645798d6481cb6dbf6948",
+					"protocol": "https",
+					"host": [
+						"mainnet",
+						"infura",
+						"io"
+					],
+					"path": [
+						"v3",
+						"21e65883b51645798d6481cb6dbf6948"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
